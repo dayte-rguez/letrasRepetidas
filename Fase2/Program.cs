@@ -8,15 +8,15 @@ namespace Fase1
         static void Main(string[] args)
         {
             //Create the array containing the characters of the name
-            char[] nameArray = { 'd', 'a', 'y', 't', 'é' };
+            char[] nameArray = { 'D', 'a', 'y', 't', 'é' };
 
             //Create the list that contains the characters of the name
-            var nameList = arrayToList(nameArray);
+            var nameList = ArrayToList(nameArray);
 
-            nameAnalysis(nameList);
+            NameAnalysis(nameList);
         }
 
-        private static void nameAnalysis(List<char> aList)
+        private static void NameAnalysis(List<char> aList)
         {
             foreach (var item in aList)
             {
@@ -27,11 +27,21 @@ namespace Fase1
                     case 'i':
                     case 'o':
                     case 'u':
+                    case 'A':
+                    case 'E':
+                    case 'I':
+                    case 'O':
+                    case 'U':
                     case 'á':
                     case 'é':
                     case 'í':
                     case 'ó':
                     case 'ú':
+                    case 'Á':
+                    case 'É':
+                    case 'Í':
+                    case 'Ó':
+                    case 'Ú':
                         Console.WriteLine($"{item} is a vowel");
                         break;
                     case '0':
@@ -53,7 +63,7 @@ namespace Fase1
             }
         }
 
-        private static List<char> arrayToList(char[] aArray)
+        private static List<char> ArrayToList(char[] aArray)
         {
             var listArray = new List<char>();
 

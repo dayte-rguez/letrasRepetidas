@@ -8,16 +8,16 @@ namespace Fase3
         static void Main(string[] args)
         {
             //Create the array containing the characters of the name
-            char[] nameArray = { 'd', 'a', 'y', 't', 'é' };
+            char[] nameArray = { 'D', 'a', 'y', 't', 'é' };
 
             //Create the list that contains the characters of the name
-            var nameList = arrayToList(nameArray);
+            var nameList = ArrayToList(nameArray);
 
             //Create a dictionary where key = name char, value = char frequency in the name
-            nameDictionary(nameList);
+            NameDictionary(nameList);
         }
 
-        private static void nameDictionary(List<char> aList)
+        private static void NameDictionary(List<char> aList)
         {
             char key; //contains the name char
             int value; //contains how many times it appears in the name
@@ -43,7 +43,7 @@ namespace Fase3
                 Console.WriteLine($"{kvp.Key} appears {kvp.Value} time(s)");
             }
         }
-        private static List<char> arrayToList(char[] aArray)
+        private static List<char> ArrayToList(char[] aArray)
         {
             var listArray = new List<char>();
 

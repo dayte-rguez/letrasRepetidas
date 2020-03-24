@@ -7,14 +7,13 @@ namespace Fase1
         static void Main(string[] args)
         {
             //Create the array containing the characters of the name
-            char[] nameArray = { 'd', 'a', 'y', 't', 'é' };
+            char[] nameArray = { 'D', 'a', 'y', 't', 'é' };
 
-            showArray(nameArray);
+            ShowArray(nameArray);
         }
 
-        private static void showArray(char[] aArray)
+        private static void ShowArray(char[] aArray)
         {
-            Console.WriteLine("Characters of the name: ");
             for (int i = 0; i < aArray.Length; i++)
             {
                 Console.WriteLine(aArray[i]);
